@@ -1,5 +1,6 @@
 package com.example.angular_crud.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -7,6 +8,7 @@ import javax.persistence.*;
 @Entity
 @Table(name = "employe")
 @Data
+@JsonIgnoreProperties({"hibernateLazyInitializer"})
 public class Employe {
 
     @Id
